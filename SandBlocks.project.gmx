@@ -14,17 +14,31 @@
       <sprite>sprites\s_dirt</sprite>
       <sprite>sprites\s_grass</sprite>
     </sprites>
+    <sprites name="Special">
+      <sprite>sprites\s_ball</sprite>
+      <sprite>sprites\s_box</sprite>
+      <sprite>sprites\s_triangle</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <objects name="Blocks">
+      <object>objects\o_block</object>
       <object>objects\o_stone</object>
       <object>objects\o_dirt</object>
       <object>objects\o_grass</object>
       <object>objects\o_wood</object>
       <object>objects\o_leaf</object>
       <object>objects\o_obsidian</object>
+    </objects>
+    <objects name="Special">
+      <object>objects\o_ball</object>
+      <object>objects\o_box</object>
+      <object>objects\o_triangle</object>
+    </objects>
+    <objects name="Logic">
+      <object>objects\o_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">
