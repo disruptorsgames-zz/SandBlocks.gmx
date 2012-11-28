@@ -5,9 +5,22 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Blocks">
+      <sprite>sprites\s_stone</sprite>
+      <sprite>sprites\s_wood</sprite>
+      <sprite>sprites\s_leaf</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <objects name="Blocks">
+      <object>objects\o_stone</object>
+      <object>objects\o_wood</object>
+      <object>objects\o_leaf</object>
+    </objects>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
