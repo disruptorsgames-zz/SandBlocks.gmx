@@ -19,9 +19,16 @@
       <sprite>sprites\s_box</sprite>
       <sprite>sprites\s_triangle</sprite>
     </sprites>
+    <sprites name="Actors">
+      <sprite>sprites\s_girl</sprite>
+      <sprite>sprites\s_bear</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\drawText.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="Blocks">
       <object>objects\o_block</object>
@@ -39,6 +46,10 @@
     </objects>
     <objects name="Logic">
       <object>objects\o_controller</object>
+    </objects>
+    <objects name="Actors">
+      <object>objects\o_player</object>
+      <object>objects\o_bear</object>
     </objects>
   </objects>
   <rooms name="rooms">
