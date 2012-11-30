@@ -7,9 +7,9 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>41</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>63</bbox_bottom>
+  <bbox_right>79</bbox_right>
+  <bbox_top>9</bbox_top>
+  <bbox_bottom>127</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroup>0</TextureGroup>
@@ -33,5 +33,23 @@
     <frame index="15">images\s_girl_15.png</frame>
     <frame index="16">images\s_girl_16.png</frame>
     <frame index="17">images\s_girl_17.png</frame>
+    <frame index="18">images\s_girl_18.png</frame>
+    <frame index="19">images\s_girl_19.png</frame>
+    <frame index="20">images\s_girl_20.png</frame>
+    <frame index="21">images\s_girl_21.png</frame>
+    <frame index="22">images\s_girl_22.png</frame>
+    <frame index="23">images\s_girl_23.png</frame>
+    <frame index="24">images\s_girl_24.png</frame>
+    <frame index="25">images\s_girl_25.png</frame>
+    <frame index="26">images\s_girl_26.png</frame>
+    <frame index="27">images\s_girl_27.png</frame>
+    <frame index="28">images\s_girl_28.png</frame>
+    <frame index="29">images\s_girl_29.png</frame>
+    <frame index="30">images\s_girl_30.png</frame>
+    <frame index="31">images\s_girl_31.png</frame>
+    <frame index="32">images\s_girl_32.png</frame>
+    <frame index="33">images\s_girl_33.png</frame>
+    <frame index="34">images\s_girl_34.png</frame>
+    <frame index="35">images\s_girl_35.png</frame>
   </frames>
 </sprite>

@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sfx_quest</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Blocks">
       <sprite>sprites\s_stone</sprite>
@@ -20,15 +22,38 @@
       <sprite>sprites\s_triangle</sprite>
     </sprites>
     <sprites name="Actors">
-      <sprite>sprites\s_girl</sprite>
-      <sprite>sprites\s_bear</sprite>
+      <sprites name="People">
+        <sprite>sprites\s_girl</sprite>
+        <sprite>sprites\s_guy</sprite>
+      </sprites>
+      <sprites name="Animals">
+        <sprite>sprites\s_bear</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\s_backpack</sprite>
+      <sprites name="Tools">
+        <sprite>sprites\s_shovel</sprite>
+        <sprite>sprites\s_axe</sprite>
+      </sprites>
+      <sprites name="Food">
+        <sprite>sprites\s_meat</sprite>
+        <sprite>sprites\s_fish</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="GUI">
+      <sprite>sprites\s_tutorial</sprite>
+      <sprite>sprites\s_controller</sprite>
+      <sprite>sprites\s_restart</sprite>
+      <sprite>sprites\s_questboook</sprite>
+      <sprite>sprites\s_hand</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\drawText.gml</script>
-  </scripts>
+  <fonts name="fonts">
+    <font>fonts\f_gui</font>
+  </fonts>
   <objects name="objects">
     <objects name="Blocks">
       <object>objects\o_block</object>
@@ -44,16 +69,31 @@
       <object>objects\o_box</object>
       <object>objects\o_triangle</object>
     </objects>
-    <objects name="Logic">
+    <objects name="GUI">
+      <object>objects\o_gui</object>
       <object>objects\o_controller</object>
+      <object>objects\o_tutorial</object>
+      <object>objects\o_restart</object>
+      <object>objects\o_questbook</object>
+      <object>objects\o_hand</object>
     </objects>
     <objects name="Actors">
       <object>objects\o_player</object>
       <object>objects\o_bear</object>
     </objects>
+    <objects name="Items">
+      <object>objects\o_backpack</object>
+      <objects name="Tools">
+        <object>objects\o_shovel</object>
+        <object>objects\o_axe</object>
+      </objects>
+      <objects name="Food">
+        <object>objects\o_fish</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\r_menu</room>
+    <room>rooms\r_world</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

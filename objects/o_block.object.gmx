@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="10">
+    <event eventtype="6" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>drawText(name, string(value), 30);
+            <string>o_controller.text = name + " : " + string(value);
 </string>
           </argument>
         </arguments>
