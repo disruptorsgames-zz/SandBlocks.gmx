@@ -20,6 +20,7 @@
   <option_android_flurry_id></option_android_flurry_id>
   <option_android_google_analytics_enable>0</option_android_google_analytics_enable>
   <option_android_google_tracking_id></option_android_google_tracking_id>
+  <option_android_iap_suppress_toast>false</option_android_iap_suppress_toast>
   <option_android_icon_170>Configs\Default\android\icons\icon170.png</option_android_icon_170>
   <option_android_icon_36>Configs\Default\android\icons\icon36.png</option_android_icon_36>
   <option_android_icon_48>Configs\Default\android\icons\icon48.png</option_android_icon_48>
@@ -48,7 +49,7 @@
   <option_changeresolution>false</option_changeresolution>
   <option_closeesc>true</option_closeesc>
   <option_colordepth>0</option_colordepth>
-  <option_display_name>GameMaker: Studio</option_display_name>
+  <option_display_name>SandBlocks</option_display_name>
   <option_displayerrors>True</option_displayerrors>
   <option_facebook_appid></option_facebook_appid>
   <option_facebook_enable>0</option_facebook_enable>
@@ -183,13 +184,13 @@
   <option_use_new_audio>True</option_use_new_audio>
   <option_variableerrors>False</option_variableerrors>
   <option_version>100</option_version>
-  <option_version_build>1</option_version_build>
-  <option_version_company></option_version_company>
-  <option_version_copyright></option_version_copyright>
-  <option_version_description></option_version_description>
+  <option_version_build>4</option_version_build>
+  <option_version_company>Disruptor's Games</option_version_company>
+  <option_version_copyright>2012</option_version_copyright>
+  <option_version_description>A sandbox game where new ideas are tested.</option_version_description>
   <option_version_major>1</option_version_major>
   <option_version_minor>0</option_version_minor>
-  <option_version_product></option_version_product>
+  <option_version_product>SandBlocks</option_version_product>
   <option_version_release>0</option_version_release>
   <option_win8_build_version>0</option_win8_build_version>
   <option_win8_certificate_location>Windows8_TemporaryKey.pfx</option_win8_certificate_location>
@@ -217,16 +218,16 @@
   <option_win8_texture_page>1024</option_win8_texture_page>
   <option_win8_wide_logo>Configs\Default\Windows8\logos\logo310.png</option_win8_wide_logo>
   <option_windowcolor>clBlack</option_windowcolor>
-  <option_windows_build_version>0</option_windows_build_version>
-  <option_windows_company_info></option_windows_company_info>
-  <option_windows_copyright_info></option_windows_copyright_info>
-  <option_windows_description_info></option_windows_description_info>
+  <option_windows_build_version>4</option_windows_build_version>
+  <option_windows_company_info>Disruptor's Games</option_windows_company_info>
+  <option_windows_copyright_info>2012</option_windows_copyright_info>
+  <option_windows_description_info>A sandbox game where new ideas are tested.</option_windows_description_info>
   <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
   <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
   <option_windows_mainor_version>0</option_windows_mainor_version>
   <option_windows_major_version>1</option_windows_major_version>
   <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
-  <option_windows_product_info></option_windows_product_info>
+  <option_windows_product_info>SandBlocks</option_windows_product_info>
   <option_windows_release_version>0</option_windows_release_version>
   <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
   <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>

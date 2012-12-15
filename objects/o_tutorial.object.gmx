@@ -29,6 +29,9 @@
 name = "Tutorial";
 selected = o_fish;
 stage = 1;
+
+//
+o_questbook.quests = 3;
 </string>
           </argument>
         </arguments>
@@ -51,10 +54,7 @@ stage = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// make the tutorial the quest
-o_questbook.quests = stage;
-
-// tutorial sequence
+            <string>// tutorial sequence
 switch (stage)
 {
     case 1:
@@ -62,8 +62,8 @@ switch (stage)
         selected = o_fish;
         break;
     case 2:
-        o_questbook.quest = "Get a tool.";
-        selected = o_axe;
+        o_questbook.quest = "Open the box.";
+        selected = o_crate;
         break;
     case 3:
         o_questbook.quest = "Get some resources.";
@@ -94,11 +94,16 @@ switch (stage)
             <kind>1</kind>
             <string>if (instance_exists(selected))
 {
-    // point at the item's true center (phy_com_x/y)
-    x = selected.phy_com_x - 10;
-    y = selected.phy_com_y - 10;
+    // point at the selected item's true center (phy_com_x/y)
+    x = selected.phy_com_x;
+    y = selected.phy_com_y;
+    // get the offest based on sprite size
+    offsetX = x - selected.sprite_width / 2;
+    offsetY = y - selected.sprite_height / 2;
+    // draw the indicator for selected items
     draw_set_color(c_red);
-    draw_arrow(x - 8, y - 16, x, y, 14);
+    draw_arrow(x, offsetY - 18, x, offsetY, 14);
+    draw_rectangle(offsetX, offsetY, offsetX + selected.sprite_width, offsetY + selected.sprite_height, 1);
     
     // display stage information
     draw_set_font(f_gui);
