@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hover = false;
+            <string>/// Initialize
+hover = false;
 name = "Quest Book";
 quests = 0;
 quest = "";
@@ -51,7 +52,8 @@ quest = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_blend = c_white;
+            <string>/// Reset Blend
+image_blend = c_white;
 </string>
           </argument>
         </arguments>
@@ -74,7 +76,8 @@ quest = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (quests)
+            <string>/// Show Quest Text
+switch (quests)
 {
     // no quests
     case 0:

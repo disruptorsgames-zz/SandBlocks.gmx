@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hover = false;
+            <string>/// Hover Leave
+hover = false;
 </string>
           </argument>
         </arguments>
@@ -48,7 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hover = true;
+            <string>/// Hover
+hover = true;
 </string>
           </argument>
         </arguments>
@@ -71,7 +73,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>/// Draw Self &amp; Hover
+draw_self();
 
 // display information
 if (hover)

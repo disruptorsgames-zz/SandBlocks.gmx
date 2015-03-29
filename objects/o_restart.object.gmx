@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hover = false;
+            <string>/// Initialize
+hover = false;
 name = "Restart";
 </string>
           </argument>
@@ -49,7 +50,8 @@ name = "Restart";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>/// Restart Game
+game_restart();
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_speed = 5;
+            <string>/// Initialize
+move_speed = 5;
 
 // animation sequence
 idleRight = 0;
@@ -60,7 +61,9 @@ phy_fixed_rotation = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// 
+            <string>/// Animation &amp; Movement
+
+// item animation
 switch (item)
 {
     case o_axe:
@@ -134,7 +137,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (o_tutorial.stage == 2)
+            <string>/// Pickup &amp; Quest
+if (o_tutorial.stage == 2)
 {
     // move to next stage
     o_tutorial.stage += 1;

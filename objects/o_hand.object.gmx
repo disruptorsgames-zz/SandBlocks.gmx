@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = mouse_x;
+            <string>/// Initialize
+x = mouse_x;
 y = mouse_y;
 </string>
           </argument>
@@ -49,7 +50,8 @@ y = mouse_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>/// Draw
+draw_self();
 </string>
           </argument>
         </arguments>

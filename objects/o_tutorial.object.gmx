@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hover = false;
+            <string>/// Initialize
+hover = false;
 name = "Tutorial";
 selected = o_fish;
 stage = 1;
@@ -51,7 +52,9 @@ stage = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// make the tutorial the quest
+            <string>/// Quest Tracker
+
+// make the tutorial the quest
 o_questbook.quests = stage;
 
 // tutorial sequence
@@ -92,7 +95,8 @@ switch (stage)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(selected))
+            <string>/// Draw Quest Book
+if (instance_exists(selected))
 {
     // point at the item's true center (phy_com_x/y)
     x = selected.phy_com_x - 10;

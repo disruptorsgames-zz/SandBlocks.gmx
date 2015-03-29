@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lives = 6;
+            <string>/// Initialize
+lives = 6;
 
 hover = false;
 name = "Hunger";
@@ -52,7 +53,8 @@ text = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text = "";
+            <string>/// Clear Text
+text = "";
 </string>
           </argument>
         </arguments>
@@ -75,7 +77,9 @@ text = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// physics
+            <string>/// Draw Physics &amp; Text
+
+// physics
 if (debug_mode)
 {
     flag = phy_debug_render_aabb | phy_debug_render_coms | phy_debug_render_joints;
@@ -139,7 +143,8 @@ for(i = 0; i &lt; lives; i += 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text = "You need a backpack before you can get items.";
+            <string>/// Backpack
+text = "You need a backpack before you can get items.";
 alarm[0] = 60;
 </string>
           </argument>
@@ -163,7 +168,8 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text = "No character information is available.";
+            <string>/// Character Sheet
+text = "No character information is available.";
 alarm[0] = 60;
 </string>
           </argument>

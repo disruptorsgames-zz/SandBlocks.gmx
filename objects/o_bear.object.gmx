@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_speed = 10;
+            <string>/// Initialize
+move_speed = 10;
 
 phy_fixed_rotation = true;
 
@@ -54,7 +55,9 @@ alarm[0] = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// find the food
+            <string>/// Think
+
+// find the food
 if (instance_exists(o_fish) &amp;&amp; distance_to_object(o_fish) &lt; 64)
 {
     dir = point_direction(x, y, o_fish.x, o_fish.y);
@@ -94,7 +97,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch(action)
+            <string>/// Movement
+switch(action)
 {
     // left
     case 0:
@@ -153,7 +157,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (o_tutorial.stage == 1)
+            <string>/// Eat Fish
+if (o_tutorial.stage == 1)
 {
     // move to next stage
     instance_create(o_player.x, o_player.y - 32, o_axe);
