@@ -69,7 +69,7 @@ switch (stage)
         selected = o_axe;
         break;
     case 3:
-        o_questbook.quest = "Get some resources.";
+        o_questbook.quest = "Collect some wood.";
         selected = o_wood;
         break;
 }

@@ -90,7 +90,7 @@ if (debug_mode)
 if (string_length(text) &gt; 0)
 {
     draw_set_font(f_gui);
-    centerX = (room_width - string_width(text)) / 2;
+    centerX = (view_wview[0] - string_width(text)) / 2;
     draw_text_color(centerX, 16, text, c_black, c_dkgray, c_black, c_dkgray, 1);
 }
 
@@ -99,6 +99,7 @@ for(i = 0; i &lt; lives; i += 1)
 {
     draw_sprite(s_meat, 0, x + (i * 24), y);
 }
+draw_text_colour(x + 16, y + 32, o_player.action, c_red, c_red, c_red, c_red, 0.75);
 </string>
           </argument>
         </arguments>
@@ -171,6 +172,30 @@ alarm[0] = 60;
             <string>/// Character Sheet
 text = "No character information is available.";
 alarm[0] = 60;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Quit
+game_end();
 </string>
           </argument>
         </arguments>
