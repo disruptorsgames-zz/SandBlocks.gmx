@@ -99,7 +99,7 @@ for(i = 0; i &lt; lives; i += 1)
 {
     draw_sprite(s_meat, 0, x + (i * 24), y);
 }
-draw_text_colour(x + 16, y + 32, o_player.action, c_red, c_red, c_red, c_red, 0.75);
+draw_text_colour(x + 16, y + 32, o_player.target, c_red, c_red, c_red, c_red, 0.75);
 </string>
           </argument>
         </arguments>

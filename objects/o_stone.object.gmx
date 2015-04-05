@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>name = "Stone";
+            <string>/// Initialize
+name = "Stone";
 value = 1;
 </string>
           </argument>
@@ -68,8 +69,8 @@ value = 1;
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
     <point>0,0</point>
-    <point>64,0</point>
-    <point>64,64</point>
-    <point>0,64</point>
+    <point>16,0</point>
+    <point>16,16</point>
+    <point>0,16</point>
   </PhysicsShapePoints>
 </object>

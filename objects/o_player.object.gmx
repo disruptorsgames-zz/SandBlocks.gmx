@@ -28,7 +28,7 @@
             <string>/// Initialize
 move_speed = 5;
 
-action = false;
+target = noone;
 
 // animation sequence
 idleRight = 0;
@@ -41,31 +41,6 @@ rightEnd = 17;
 item = 0;
 
 phy_fixed_rotation = true;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Action Timer
-if (action &gt; 0.00)
-    action -= 0.05;
 </string>
           </argument>
         </arguments>
@@ -165,7 +140,10 @@ else
           <argument>
             <kind>1</kind>
             <string>/// Pickup &amp; Quest
-if (o_tutorial.stage == 2)
+
+target = other.id;
+
+/*if (o_tutorial.stage == 2)
 {
     // move to next stage
     o_tutorial.stage += 1;
@@ -177,7 +155,7 @@ if (o_tutorial.stage == 2)
     item = o_axe;
 }
 
-with (other) { instance_destroy(); }
+with (other) { instance_destroy(); }*/
 </string>
           </argument>
         </arguments>
@@ -201,28 +179,6 @@ with (other) { instance_destroy(); }
           <argument>
             <kind>1</kind>
             <string>Null</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Toggle Action
-action = 1;
-</string>
           </argument>
         </arguments>
       </action>
@@ -270,28 +226,6 @@ action = 1;
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Toggle Action
-action = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="9" enumb="69">
       <action>
@@ -311,10 +245,10 @@ action = 1;
           <argument>
             <kind>1</kind>
             <string>/// Action
-if (action &gt; 0)
+if (target != noone)
 {
-    physics_apply_impulse(0, 0, 0, -500);
-    action = 0;
+    physics_apply_impulse(0, 0, 0, -1500);
+    target = noone;
 }
 </string>
           </argument>
